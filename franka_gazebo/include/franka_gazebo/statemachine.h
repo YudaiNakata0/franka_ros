@@ -4,7 +4,7 @@
 #include <franka_gazebo/joint.h>
 
 #include <ros/ros.h>
-#include <boost_sml/sml.hpp>
+#include <boost/sml.hpp>
 #include <map>
 #include <memory>
 #include <string>

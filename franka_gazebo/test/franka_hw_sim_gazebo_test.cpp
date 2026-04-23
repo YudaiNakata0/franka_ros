@@ -13,7 +13,7 @@
 #include <sensor_msgs/JointState.h>
 #include <std_srvs/SetBool.h>
 #include <array>
-#include <boost_sml/sml.hpp>
+#include <boost/sml.hpp>
 #include <map>
 #include <memory>
 #include <string>

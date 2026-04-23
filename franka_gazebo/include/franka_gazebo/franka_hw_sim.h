@@ -18,7 +18,7 @@
 #include <urdf/model.h>
 #include <array>
 #include <boost/optional.hpp>
-#include <boost_sml/sml.hpp>
+#include <boost/sml.hpp>
 #include <cmath>
 #include <gazebo/common/common.hh>
 #include <gazebo/physics/physics.hh>
