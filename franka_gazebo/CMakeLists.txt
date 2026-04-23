@@ -11,7 +11,7 @@ if(${ARCHITECTURE} STREQUAL "armv7l")
 endif()
 
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Load catkin and all dependencies required for this package
@@ -21,7 +21,6 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   gazebo_ros_control
   kdl_parser
-  boost_sml
   control_toolbox
   controller_manager
   controller_interface
@@ -53,7 +52,6 @@ catkin_package(
     std_msgs
     gazebo_ros_control
     kdl_parser
-    boost_sml
     controller_manager
     controller_interface
     control_toolbox
@@ -78,6 +76,7 @@ link_directories(
 )
 
 include_directories(include
+  include/sml/include
   ${Boost_INCLUDE_DIR}
   ${catkin_INCLUDE_DIRS}
 )
